@@ -1,26 +1,74 @@
+
+/* 웹페이지 가로 사이즈 1920px */
+
 .section01 {
+  
 
   header{
-    display: flex;
-    background-color: red;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-
-
+    /* width: 1920px;  */
+    list-style: none;
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between; /* gnb 3등분 영역 지정해주기 */
+    position: center; 
+    height: 50px;
+    background-color: #fff;
+    padding: 50px;
+    margin: 3px;
+    /* border-bottom: 1px solid black; */
     .group{
       display: flex;
+      position: center;
+      gap: 10em;
+      .gnb{
+        border-left: 1px solid black;
+        padding: 10px;
+        height: 100%;
+      }
+      ._gnb{
+        border-left: 1px solid black;
+        padding: 15px;
+        height: 100%;
+      }
+      .icons-img{
+        /* margin: 10px; */
+        padding: 20px;
+      }
     }
+    
   }
 
-  
+.main-container{
+  display: relative;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
 
+  .text{
+    position: absolute;
+    display: flex;
+  }
+  /* 이미지 위에 텍스트 배치 relative - absolute */
+  /* .bg-img{
+    position: relative;
+    display: fixed;
+    width: auto;
+    text-align: center;
+    background-color: #fff;
+  } */
   
 }
+}
+
+
 
 
 
 .section02{
 
   height: 1300px;
+
   /* background-image: url(); */
 }
