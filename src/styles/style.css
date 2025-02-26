@@ -56,6 +56,17 @@
   }
 }
 
+
+.bg-img{
+  width: 1600px;
+  height: 739px;
+  margin: 0 auto;
+}
+
+.swiper-slide{
+  position: relative;
+}
+
 .btn {
   border: none;
   width: 208px;
@@ -82,9 +93,17 @@
 
   .flex-container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
   }
 }
+
+
+.top-img{
+  display: flex;
+}
+
 
 .section03{
   .title{
