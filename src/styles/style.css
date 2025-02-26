@@ -1,4 +1,6 @@
 /* 웹페이지 가로 사이즈 1920px */
+/* background-image: url(); */
+
 
 .section01 {
   header {
@@ -34,7 +36,7 @@
       }
     }
   }
-
+/* Main page */
   .main-container {
     position: relative;
     padding: 10px;
@@ -43,23 +45,14 @@
     background-color: #fff;
 
     .text {
-      position: absolute;
-      display: flex;
+    position: absolute;
     }
-    /* 이미지 위에 텍스트 배치 relative - absolute */
-    /* .bg-img{
-    position: relative;
-    display: fixed;
-    width: auto;
-    text-align: center;
-    background-color: #fff;
-  } */
-  }
+  } 
 
   .btn {
     position: absolute;
-    left: 30px;
-    bottom: 200px;
+    left: 80px;
+    bottom: 130px;
   }
 }
 
@@ -67,17 +60,42 @@
   border: none;
   width: 208px;
   height: 50px;
-  border: 1px solid black;
-  background: url("/common/button.jpg") no-repeat center;
+  border: 1px solid #fff;
+  background: url("/common/button.png") no-repeat center;
   cursor: pointer;
 
   &:hover {
-    background: black url("/common/button.png") no-repeat center;
+    background: black url("/common/button.jpg") no-repeat center;
   }
 }
 
+/* products page */
 .section02 {
-  height: 1300px;
+  .title{
+    justify-content:space-between;
+  }
+  background-color: #fff;
 
-  /* background-image: url(); */
+    .text {
+    position: absolute;
+    }
+
+  .flex-container{
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+.section03{
+  .title{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
