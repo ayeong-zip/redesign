@@ -2,6 +2,23 @@
 /* background-image: url(); */
 /* products페이지 flexbox top <-> bottom 여백 없애기 */
 
+
+
+
+
+.hover_effect{
+  overflow: hidden;
+}
+
+
+.hover_effect img{
+  transition: all 1s;
+}
+
+.hover_effect:hover img{
+  transform: scale(1.3);
+}
+
 .section01 {
   background-color: #fff;
   width: 1920px;
