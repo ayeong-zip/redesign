@@ -1,45 +1,67 @@
 /* 웹페이지 가로 사이즈 1920px */
 /* background-image: url(); */
-
+/* products페이지 flexbox top <-> bottom 여백 없애기 */
 
 .section01 {
+  background-color: #fff;
+  width: 1920px;
+
   header {
-    /* width: 1920px;  */
     list-style: none;
     display: flex;
-    position: relative;
+    position: relative; 
     align-items: center;
     justify-content: space-between; /* gnb 3등분 영역 지정해주기 */
     position: center;
     height: 50px;
-    background-color: #fff;
     padding: 50px;
-    /* margin: 3px; */
     border-bottom: 1px solid black;
+
+    .logo{
+      padding-left: 6%;
+    }
+
     .group {
       display: flex;
       position: center;
       gap: 10em;
+      padding: 32%;
+      
       .gnb {
         border-left: 1px solid black;
-        padding: 10px;
+        padding: 0;
         height: 100%;
+
+        .gnb-img{
+          display: flex;
+          padding: 3%;
+          padding-left: 10px;
+        }
       }
       ._gnb {
         border-left: 1px solid black;
-        padding: 15px;
-        height: 100%;
+        padding-left: 10px;
+
+        ._gnb-img{
+          display: flex;
+          padding: 3%;
+        }
       }
-      .icons-img {
-        /* margin: 10px; */
-        padding: 20px;
+      .icons {
+        padding-left: 10px;
+        padding-right: 5px;
+        
+        .icon-img{
+          display: flex;
+          padding: 18%;
+        }
       }
     }
   }
+
 /* Main page */
   .main-container {
     position: relative;
-    padding: 10px;
     text-align: center;
     justify-content: center;
     background-color: #fff;
@@ -47,14 +69,21 @@
     .text {
     position: absolute;
     }
+
+    .title{
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
   } 
 
   .btn {
     position: absolute;
-    left: 80px;
+    left: 45px;
     bottom: 130px;
   }
-}
+
+
+
 
 
 .bg-img{
@@ -80,41 +109,235 @@
   }
 }
 
+}
+
+
+
+
+
+
+
+
 /* products page */
 .section02 {
-  .title{
-    justify-content:space-between;
-  }
   background-color: #fff;
-
-    .text {
-    position: absolute;
-    }
+  width: 1920px;
+  height: inherit;
+  
 
   .flex-container{
     display: flex;
+    position: relative;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* justify-content: space-between; */
+
+    .title{
+      padding-top: 123px;
+      padding-bottom: 30px;
+    }
+  
+    .img_top{
+      display: flex;
+
+      .text-top{
+        display: flex;
+        position: absolute;
+        margin: 0 auto;
+        top: 16%;
+        transform: translate(50%, -15%);
+        
+      }
+      .retailer_btn{
+        display: flex;
+        position: absolute;
+        margin: 0 auto;
+        top: 40%;
+        transform: translate(22%, -40%);
+        padding: 0;
+
+        &:hover {
+          background: white url("/section02/button.jpg") no-repeat center;
+        }
+      }
+    }
+    .img_bottom{
+      display: flex;
+
+      .text-bottom{
+        padding-top: 50px;
+        display: flex;
+        position: absolute;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+
+
+.retailer_btn {
+  background: url("/section02/button.png") no-repeat center;
+  cursor: pointer;
+
+  &:hover {
+    background: black url("/section02/button.jpg") no-repeat center;
+  }
+}
+
+.Bedroom{
+  display: flex;
+  justify-content: center;
+}
+.Tables{
+  display: flex;
+  justify-content: center;
+}
+.chairs{
+  display: flex;
+  justify-content: center;
+}
+.Accessories{
+  display: flex;
+  justify-content: center;
+}
+
+/* lifestyle */
+.section03{
+  background-color: #fff;
+  width: 1920px;
+  height: inherit;
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 123px;
+    padding-bottom: 2%;
+  }
+
+  .flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: re;
+    padding-top: 2%;
+    padding-left: 170px;
+    padding-right: 170px;
+
+    .flex-img{
+      display: flex;
+      .img{
+        display: flex;
+      }
+      .img-tag{
+        position: absolute;
+        padding-left: 5%;
+        padding-top: 15%;
+        
+      }
+    }
+   .body{
+    .drawers{
+      display: flex;
+      padding-top: 10%;
+      padding-bottom: 20%;
+      .drawer1{
+        padding-right: 3%;
+      }
+    }
+    
+   }
+      
+
+  }
+  .pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  gap: 1rem;
+  
   }
 }
 
 
-.top-img{
-  display: flex;
-}
+/* Archive */
+.section04{
+  background-color: #fff;
+  width: 1920px;
+  height: 1100px;
+  padding-top: 123px;
 
-
-.section03{
   .title{
     display: flex;
     justify-content: center;
   }
+
+  .title-body{
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+  }
+  .flex-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .img-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1%;  /* 그리드 레이아웃 마진값 주기 */
+      
+      .flex-text{
+        display: flex;
+        position: absolute;
+        padding-top: 38%;
+      } 
+    }
+  }
 }
 
+/* sustainability */
+.section05{
+  background-color: #fff;
+  width: 1920px;
+  height: 100vh;
 
+  .title{
+    display: flex;
+    justify-content: center;
+  }
+  .flex-container{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .img-container{
+      display: flex;
+      position: relative;
+      padding-right: 8%;
+      .sound-btn{
+        display: flex;
+        
+        
+      }
 
-
-
-
+      .content{
+        padding-top: 10%;
+        padding-left: 6%;
+        .text{
+          padding-bottom: 10%;
+        }
+        .button{
+          border: none; 
+          /* 버튼 테두리 지우기 */
+        }
+      
+      }
+    }
+  }
+}
