@@ -6,6 +6,14 @@
 
 
 
+.text-effect{
+  opacity: 0.3; /*  0 ~ 1 : 100% */
+  transition:all .5s;
+
+  &:hover{
+    opacity: 1;
+  }
+}
 .hover_effect{
   overflow: hidden;
   
@@ -22,19 +30,55 @@
 
 .section01 {
   background-color: #fff;
-  width: 1920px;
+  /* width: 1920px; */
+
 
   header {
     list-style: none;
-    display: flex;
-    position: relative; 
-    align-items: center;
-    justify-content: space-between; /* gnb 3등분 영역 지정해주기 */
-    position: center;
-    height: 50px;
-    padding: 50px;
-    border-bottom: 1px solid black;
+    z-index: 10;
+    position: relative;
+    /* height: 50px; */
+    /* padding: 50px; */
+  
 
+
+
+    .inner{
+      width: 1280px;
+      margin: 0 auto;
+      /* background: red; */
+      display: flex;
+      position: relative; 
+      align-items: center;
+      border-bottom: 1px solid black;
+      justify-content: space-between; /* gnb 3등분 영역 지정해주기 */
+
+    
+    }
+
+    .bottom{
+      display: none;
+      width: 100vw;
+      height: 300px;
+      background-color: rgb(173, 46, 46);
+
+      .about{
+        display: none;
+      }
+      .product{
+        display: none;
+      }
+
+    }
+
+    .bottom_inner{
+      width: 1280px;
+      margin: 0 auto;
+      background-color: red;
+      height: 300px;
+    }
+
+    
     .logo{
       padding-left: 6%;
     }
@@ -43,7 +87,7 @@
       display: flex;
       position: center;
       gap: 10em;
-      padding: 32%;
+      padding-right:4%;
       
       .gnb {
         border-left: 1px solid black;
@@ -82,7 +126,7 @@
     position: relative;
     text-align: center;
     justify-content: center;
-    background-color: #fff;
+    /* background-color: #fff; */
 
     .text {
     position: absolute;
@@ -139,7 +183,7 @@
 /* products page */
 .section02 {
   background-color: #fff;
-  width: 1920px;
+  /* width: 1920px; */
   height: inherit;
   
 
@@ -163,7 +207,7 @@
         position: absolute;
         margin: 0 auto;
         top: 16%;
-        /* transform: translate(50%, -15%); */
+        transform: translate(50%, -15%);
         
       }
       .retailer .ad-title{
@@ -176,12 +220,18 @@
       
       }
 
+
+
       .retailer-btn{
-        display: flex;
+        border: none;
+        width: 441px;
+        height: 50px;
         position: absolute;
         margin: 0 auto;
+        left:0;
         top: 40%;
         transform: translate(22%, -40%);
+        background: white url("/section02/button.png") no-repeat center;
         padding: 0;
 
         &:hover {
@@ -206,15 +256,6 @@
 }
 
 
-.retailer-btn {
-  background: url("/section02/button.png") no-repeat center;
-  cursor: pointer;
-
-  &:hover {
-    background: black url("/section02/button.jpg") no-repeat center;
-  }
-}
-
 .bedroom{
   display: flex;
   justify-content: center;
@@ -235,7 +276,7 @@
 /* lifestyle */
 .section03{
   background-color: #fff;
-  width: 1920px;
+  /* width: 1920px; */
   height: inherit;
 
   .title{
@@ -295,7 +336,7 @@
 /* Archive */
 .section04{
   background-color: #fff;
-  width: 1920px;
+  /* width: 1920px; */
   height: 1100px;
   padding-top: 123px;
   position: relative;
@@ -335,7 +376,7 @@
 /* sustainability */
 .section05{
   background-color: #fff;
-  width: 1920px;
+  /* width: 1920px; */
   height: inherit;
 
   .title{
@@ -379,7 +420,7 @@
 /* final */
 .section06{
   background-color: #fff;
-  width: 1920px;
+  /* width: 1920px; */
   height: inherit;
 
   .flex-container{
@@ -431,6 +472,6 @@
 /* footer */
 .section07{
   background-color: #fff;
-  width: 1920px;
+  /* width: 1920px; */
   height: inherit;
   }
