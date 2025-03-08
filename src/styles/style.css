@@ -8,6 +8,7 @@
 
 .hover_effect{
   overflow: hidden;
+  
 }
 
 
@@ -55,11 +56,11 @@
           padding-left: 10px;
         }
       }
-      ._gnb {
+      .gnb-home {
         border-left: 1px solid black;
         padding-left: 10px;
 
-        ._gnb-img{
+        .gnb-home-img{
           display: flex;
           padding: 3%;
         }
@@ -87,7 +88,7 @@
     position: absolute;
     }
 
-    .title{
+    .maintext{
       padding-top: 20px;
       padding-bottom: 15px;
     }
@@ -154,7 +155,7 @@
       padding-bottom: 30px;
     }
   
-    .img_top{
+    .img-top{
       display: flex;
 
       .text-top{
@@ -162,10 +163,20 @@
         position: absolute;
         margin: 0 auto;
         top: 16%;
-        transform: translate(50%, -15%);
+        /* transform: translate(50%, -15%); */
         
       }
-      .retailer_btn{
+      .retailer .ad-title{
+        display: flex;
+        position: absolute;
+        margin: 0 auto;
+        top: 30%;
+        transform: translate(22%, -40%);
+          
+      
+      }
+
+      .retailer-btn{
         display: flex;
         position: absolute;
         margin: 0 auto;
@@ -178,14 +189,16 @@
         }
       }
     }
-    .img_bottom{
+    .img-bottom{
       display: flex;
 
       .text-bottom{
-        padding-top: 50px;
         display: flex;
         position: absolute;
         margin: 0 auto;
+        
+        
+        
       }
     }
   }
@@ -193,7 +206,7 @@
 }
 
 
-.retailer_btn {
+.retailer-btn {
   background: url("/section02/button.png") no-repeat center;
   cursor: pointer;
 
@@ -202,11 +215,11 @@
   }
 }
 
-.Bedroom{
+.bedroom{
   display: flex;
   justify-content: center;
 }
-.Tables{
+.tables{
   display: flex;
   justify-content: center;
 }
@@ -214,7 +227,7 @@
   display: flex;
   justify-content: center;
 }
-.Accessories{
+.accessories{
   display: flex;
   justify-content: center;
 }
@@ -285,22 +298,24 @@
   width: 1920px;
   height: 1100px;
   padding-top: 123px;
+  position: relative;
 
   .title{
     display: flex;
     justify-content: center;
   }
 
-  .title-body{
-    display: flex;
-    padding: 2%;
-    justify-content: center;
-  }
+ 
   .flex-container{
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
+
+    .text{
+      display: flex;
+      justify-content: center;
+    }
 
     .img-container{
       display: flex;
@@ -339,6 +354,7 @@
       padding-right: 8%;
       .sound-btn{
         display: flex;
+        position: absolute;
       }
 
       .content{
@@ -347,11 +363,6 @@
         .text{
           padding-bottom: 10%;
         }
-        .button{
-          border: none; 
-          /* 버튼 테두리 지우기 */
-        }
-      
       }
     }
   }
@@ -379,6 +390,7 @@
     .footer-text{
       .top-footer{
         display: flex;
+
         .FURNITURE{
           display: flex;
           padding-left: 3%;
@@ -421,46 +433,4 @@
   background-color: #fff;
   width: 1920px;
   height: inherit;
-
-  .flex-container{
-    background-color: black;
-    height: 616px;
-    padding-left: 5%;
-    display: flex;
-    /* justify-content: space-between; */
-
-    .left-box{
-      
-      .logo{
-        display: flex;
-        padding-top: 15%;
-      }
-      .address{
-        display: flex;
-        padding-top: 10%;
-      }
-      .cvr{
-        display: flex;
-        padding-top: 10%;
-      }
-      .reserved{
-        display: flex;
-        padding-top: 30%;
-      }
-    }
-    .right-box{
-      display: flex;
-      padding-left: 20%;
-      padding-top: 3%;
-
-      .title{
-        display: flex;
-      }
-      .body{
-        padding-top: 20%;
-        
-      }
-    }
-
   }
-} 
