@@ -52,29 +52,220 @@
       align-items: center;
       border-bottom: 1px solid black;
       justify-content: space-between; /* gnb 3등분 영역 지정해주기 */
+      padding-top: 1%;
+      padding-bottom: 1%;
 
     
     }
 
     .bottom{
-      display: none;
+      /* display: none; */
       width: 100vw;
-      height: 300px;
-      background-color: rgb(173, 46, 46);
+      height: 448px;
+      background-color: rgb(255, 255, 255);
+      
 
       .about{
         display: none;
+        .flex-container{
+          display: flex;
+          padding-top: 5%;
+          position: relative;
+         
+
+          .img-container{
+            display: flex;
+            padding-left: 3%;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+          }
+          .content{
+            position: relative;
+            padding-left: 3%;
+            
+            .shopallproducts{
+              position: absolute;
+              left: 20%;
+              bottom: 0;
+    
+            }
+          }
+          
+        }
+
       }
-      .product{
+      .productnew{
         display: none;
+
+        .flex-container{
+          display: flex;
+          position: relative;
+          padding-top: 30%;
+
+          .subtitle{
+            position: absolute;
+            left: 0;
+            top: 10%;
+            .contents{
+             padding-bottom: 20%;
+            }
+            .text{
+             padding-top: 10%;
+            }
+            .shopallproducts{
+              padding-top: 70%;
+            }
+          }
+          .img-container{
+            display: flex;
+            position: absolute;
+            right: 40px;
+            top: 10%;
+            gap: 2%;
+            .text{
+              padding-top: 2%;
+            }
+          }
+        }
+      }
+/* lnb best */
+      .productbest{
+        display: none;
+
+        .flex-container{
+          display: flex;
+          position: relative;
+          padding-top: 30%;
+
+          .subtitle{
+            position: absolute;
+            left: 0;
+            top: 10%;
+
+            .contents{
+             padding-bottom: 20%;
+            }
+            .text{
+             padding-top: 10%;
+            }
+            .shopallproducts{
+              padding-top: 88%;
+            }
+          }
+          
+          .img-container{
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-top: 1%;
+            padding-bottom: 1%;
+
+            .group{
+              padding-top: 3%;
+              display: flex;
+              align-items: center;
+              border-bottom: 1px solid rgb(217, 217, 217);
+              
+              
+              .category{
+                display: flex;
+                gap: 3rem;
+              }
+
+            }
+
+            /* .panton{
+              display: flex;
+              align-items: center;
+              justify-content: right;
+              padding-bottom: 5%;
+              
+              .category{
+                padding-left: 60%;
+                display: flex;
+                gap: 20%;
+              }
+            }
+            
+            .kevi{
+              display: flex;
+              align-items: center;
+              justify-content: right;
+              padding-bottom: 5%;
+              
+              .category{
+                padding-left: 66%;
+                display: flex;
+                gap: 30%;
+              }
+            }
+
+            .storage{
+              display: flex;
+              align-items: center;
+              justify-content: right;
+              padding-bottom: 5%;
+              
+              .category{
+                padding-left: 13%;
+                display: flex;
+                gap: 7%;
+              }
+            } */
+          }
+
+        }
+        
+      }
+
+      /* product - all */
+      .productall{
+        /* display: none; */
+
+        .flex-container{
+          display: flex;
+          position: relative;
+          padding-top: 30%;
+
+          .subtitle{
+            position: absolute;
+            left: 0;
+            top: 10%;
+
+            .contents{
+             padding-bottom: 20%;
+            }
+            .text{
+             padding-top: 10%;
+            }
+            .shopallproducts{
+              padding-top: 88%;
+            }
+          }
+          .img-container{
+            .content{
+              padding-top: 3%;
+            }
+
+          }
+        }
+
+
+
+
+
+
+
       }
 
     }
 
+
     .bottom_inner{
       width: 1280px;
       margin: 0 auto;
-      background-color: red;
+      background-color: rgb(255, 255, 255);
       height: 300px;
     }
 
@@ -85,7 +276,6 @@
 
     .group {
       display: flex;
-      position: center;
       gap: 10em;
       padding-right:4%;
       
@@ -201,77 +391,121 @@
   
     .img-top{
       display: flex;
+      position: relative;
+
+     .shelving{
+      position: relative;
 
       .text-top{
-        display: flex;
         position: absolute;
         margin: 0 auto;
-        top: 16%;
+        left: 25%;
+        top: 10%;
         transform: translate(50%, -15%);
         
       }
-      .retailer .ad-title{
-        display: flex;
+     }
+
+     .cabinets{
+      position: relative;
+
+      .text-top{
         position: absolute;
         margin: 0 auto;
-        top: 30%;
-        transform: translate(22%, -40%);
-          
-      
+        left: 25%;
+        top: 10%;
+        transform: translate(50%, -15%);
+        
       }
+     }
 
+      .retailer{
+        position: relative;
 
-
-      .retailer-btn{
-        border: none;
-        width: 441px;
-        height: 50px;
-        position: absolute;
-        margin: 0 auto;
-        left:0;
-        top: 40%;
-        transform: translate(22%, -40%);
-        background: white url("/section02/button.png") no-repeat center;
-        padding: 0;
-
-        &:hover {
-          background: white url("/section02/button.jpg") no-repeat center;
+        .ad-title{
+          display: flex;
+          position: absolute;
+          margin: 0 auto;
+          left: 10%;
+          top: 30%;
+          transform: translate(22%, -40%);
         }
+
+        .retailer-btn{
+          border: none;
+          width: 441px;
+          height: 50px;
+          position: absolute;
+          margin: 0 auto;
+          left:0;
+          bottom: 30%;
+          transform: translate(22%, -40%);
+          background: white url("/section02/button.png") no-repeat center;
+          padding: 0;
+  
+          &:hover {
+            background: white url("/section02/button.jpg") no-repeat center;
+          }
+        }
+  
+
       }
     }
     .img-bottom{
       display: flex;
 
-      .text-bottom{
-        display: flex;
-        position: absolute;
-        margin: 0 auto;
-        
-        
-        
+      .bedroom{
+        position: relative;
+      
+        .text-bottom{
+          position: absolute;
+          margin: 0 auto;
+          left: 15%;
+          top: 10%;
+          transform: translate(50%, -15%);
+        }
       }
+      .tables{
+        position: relative;
+      
+        .text-bottom{
+          position: absolute;
+          margin: 0 auto;
+          left: 33%;
+          top: 10%;
+          transform: translate(50%, -15%);
+        }
+      }
+      .chairs{
+        position: relative;
+      
+        .text-bottom{
+          position: absolute;
+          margin: 0 auto;
+          left: 33%;
+          top: 10%;
+          transform: translate(50%, -15%);
+        }
+      }
+      .accessories{
+        position: relative;
+      
+        .text-bottom{
+          position: absolute;
+          margin: 0 auto;
+          left: 15%;
+          top: 10%;
+          transform: translate(50%, -15%);
+        }
+      }
+
     }
   }
 
 }
 
 
-.bedroom{
-  display: flex;
-  justify-content: center;
-}
-.tables{
-  display: flex;
-  justify-content: center;
-}
-.chairs{
-  display: flex;
-  justify-content: center;
-}
-.accessories{
-  display: flex;
-  justify-content: center;
-}
+
 
 /* lifestyle */
 .section03{
@@ -289,26 +523,32 @@
 
   .flex-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: re;
     padding-top: 2%;
-    padding-left: 170px;
-    padding-right: 170px;
+    /* padding-left: 170px;
+    padding-right: 170px; */
+
+  
 
     .flex-img{
       display: flex;
+      position: relative;
       .img{
-        display: flex;
+        padding-left: 2%;
       }
       .img-tag{
         position: absolute;
-        padding-left: 5%;
-        padding-top: 15%;
+        left: 18%;
+        top: 40%;
         
       }
     }
+
    .body{
+    padding-left: 3%;
+    position: relative;
+
     .drawers{
       display: flex;
       padding-top: 10%;
@@ -316,7 +556,25 @@
       .drawer1{
         padding-right: 3%;
       }
+
     }
+    .custom-btn{
+      border: none;
+      width: 405px;
+      height: 50px;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      bottom: 0;
+      transform: translate(12%, -40%);
+      background: white url("/section03/button.jpg") no-repeat center;
+      padding: 0;
+
+      &:hover {
+        background: white url("/section03/button-hover.jpg") no-repeat center;
+      }
+
+     }
     
    }
       
@@ -344,8 +602,17 @@
   .title{
     display: flex;
     justify-content: center;
-  }
+    align-items: center;
+    padding-top: 123px;
+    padding-bottom: 2%;
 
+    .archive{
+      position: absolute;
+    }
+    .currentnews{
+      position: absolute;
+    }
+  }
  
   .flex-container{
     display: flex;
@@ -367,10 +634,11 @@
       .flex-text{
         display: flex;
         position: absolute;
-        padding-top: 38%;
+        padding-top: 45%;
       } 
     }
   }
+
 }
 
 /* sustainability */
@@ -382,6 +650,9 @@
   .title{
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 123px;
+    padding-bottom: 2%;
   }
   .flex-container{
     padding-top: 3%;
@@ -396,6 +667,10 @@
       .sound-btn{
         display: flex;
         position: absolute;
+        left: 2%;
+        bottom: 5%;
+        gap: 800px;
+
       }
 
       .content{
@@ -405,6 +680,24 @@
           padding-bottom: 10%;
         }
       }
+
+    .btn{
+      border: none;
+      width: 208px;
+      height: 50px;
+      position: absolute;
+      margin: 0 auto;
+      right: 22%;
+      bottom: 30%;
+      transform: translate(20%, -40%);
+      background: white url("/common/buttonblack.jpg") no-repeat center;
+      padding: 0;
+
+      &:hover {
+        background: white url("/common/button.jpg") no-repeat center;
+      }
+
+     }
     }
   }
   .pagination{
@@ -431,16 +724,18 @@
     .footer-text{
       .top-footer{
         display: flex;
+        gap: 2%;
 
         .FURNITURE{
           display: flex;
-          padding-left: 3%;
+          padding-left: 13%;
           
         }
       }
       .bottom-footer{
         display: flex;
         padding-top: 1%;
+        gap: 2%;
         .SERVICE{
           display: flex;
           padding-left: 3%;

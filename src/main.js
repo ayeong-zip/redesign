@@ -100,8 +100,49 @@ ScrollTrigger.create({
   // scrub: true,
 })
 
+ScrollTrigger.create({
+  trigger: '.section02',
+  start: 'top top',
+  end: 'bottom bottom',
+  animation: gsap.from('.bedroom',{y:30,opacity:0}),
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  // scrub: true,
+})
 
+ScrollTrigger.create({
+  trigger: '.section02',
+  start: 'top top',
+  end: 'bottom bottom',
+  animation: gsap.from('.tables',{y:30,opacity:0}),
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  // scrub: true,
+})
 
+ScrollTrigger.create({
+  trigger: '.section02',
+  start: 'top top',
+  end: 'bottom bottom',
+  animation: gsap.from('.chairs',{y:30,opacity:0}),
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  // scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.section02',
+  start: 'top top',
+  end: 'bottom bottom',
+  animation: gsap.from('.accessories',{y:30,opacity:0}),
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  // scrub: true,
+})
 
 
 
