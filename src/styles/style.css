@@ -63,6 +63,8 @@
       width: 100vw;
       height: 448px;
       background-color: rgb(255, 255, 255);
+      position: absolute;
+      left: 0;
       
 
       .about{
@@ -221,7 +223,7 @@
 
       /* product - all */
       .productall{
-        /* display: none; */
+        display: none;
 
         .flex-container{
           display: flex;
