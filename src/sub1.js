@@ -17,14 +17,14 @@ gsap.registerPlugin(ScrollTrigger);
 /* section01 */
 
 ScrollTrigger.create({
-    trigger: '.section01',
-    // start: 'top top',
-    // end: 'bottom bottom',
-    animation: gsap.from('.section01 .body .flex-container .left .text',{y:10,opacity:0}),
+    trigger: '.section01 .body .text',
+    start: 'top center',
+    end: 'bottom center',
+    animation: gsap.from('.section01 .body .text',{x:100,opacity:0}),
     // pin: false,
     // pinSpacing: false,
-    // markers: true,
-    // scrub: true,
+    markers: true,
+    scrub: true,
   })
 
 
