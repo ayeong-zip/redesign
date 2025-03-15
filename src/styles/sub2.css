@@ -1,0 +1,240 @@
+.text-effect{
+    opacity: 0.3; /*  0 ~ 1 : 100% */
+    transition:all .5s;
+  
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .hover_effect{
+    overflow: hidden;
+    
+  }
+  
+  
+  .hover_effect img{
+    transition: all 1s;
+  }
+  
+  .hover_effect:hover img{
+    transform: scale(1.3);
+  }
+
+
+/* inspration */
+.section01{
+    height: inherit;
+
+    .main-container{
+        .img-container{
+            position: relative;
+            display: flex;
+            .content{
+                display: flex;
+                position: absolute;
+                left: 5%;
+                top: 10%;
+            }
+            .title{
+                position: absolute;
+                left: 8%;
+                top: 40%;
+            }
+        }
+    }
+    .animationpage{
+      display: flex;
+      padding-top: 5%;
+      position: relative;
+
+      .left{
+        display: flex;
+        
+        .front{
+          position: absolute;
+          padding-top: 18%;
+          padding-left: 23%;
+        }
+      }
+      .center{
+        padding-top: 2%;
+        padding-left: 15%;
+        justify-content: center;
+        align-items: center;
+
+        .topimg{
+          padding-left: 60%;
+        }
+        .title{
+          padding-top: 20%;
+          .text{
+            padding-top: 5%;
+          }
+        }
+        .bottomimg{
+          display: flex;
+          padding-top: 20%;
+          padding-left: 40%;
+          position: relative;
+
+          .frontimg{
+            position: absolute;
+            bottom: 37%;
+            left: 20%;
+          }
+        }
+      }
+      
+      .right{
+        position: absolute;
+        top: 17%;
+        padding-left: 90%;
+      }
+    }
+  }
+
+.section02{
+  .youtube{
+    padding-top: 5%;
+    .titleimg{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2%;
+    }
+    .textimg{
+      padding-top: 3%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 3%;
+    }
+    .explore-btn{
+      display: flex;
+      justify-content: center;
+    }
+    
+    
+  }
+
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 352px;
+    height: 50px;
+    background: url("/inspiration/explorebutton.png") no-repeat center;
+    cursor: pointer;
+  
+    &:hover {
+      border: 1px solid black;
+      background: black url("/inspiration/explorebutton.jpg") no-repeat center;
+    }
+  }
+
+}
+
+.section03{
+  .leftpage{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+
+    .img-container{
+      position: relative;
+
+      .read-btn{
+        position: absolute;
+        left: 45%;
+        bottom: 5%;
+        width: 222px; 
+        height: 50px;
+        background: url("/inspiration/readbutton.png") no-repeat center;
+        cursor: pointer;
+  
+        &:hover {
+        border: 1px solid black;
+        background: black url("/inspiration/readbutton.jpg") no-repeat center;
+        }
+      }
+    }
+   .rightpage{
+    padding-left: 5%;
+
+    .text-container{
+      .title{
+        padding-top: 5%;
+      }
+      .text{
+        padding-top: 10%;
+      }
+    }
+    .creativeimg{
+      padding-top: 5%;
+      .text{
+        padding-top: 10%;
+      }
+    }
+   }
+  }
+}
+
+/* snspage */
+.section04{
+  .snspage{
+    padding-top: 5%;
+    
+    .title{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2%;
+    }
+    .flex-container{
+      display: flex;
+      justify-content: center;
+
+     .leftpage{
+      .product{
+        display: flex;
+        padding-top: 35%;
+
+        .panton{
+          padding-right: 4%;
+          position: relative;
+          .img{
+            position: absolute;
+            left: 22%;
+            top: 22%;
+          }
+          .name{
+            padding-top: 3%;
+          }
+        }
+        .panel{
+          position: relative;
+          .img{
+            position: absolute;
+            left: 15%;
+            top: 35%;
+          }
+          .name{
+            padding-top: 3%;
+          }
+        }
+      
+      }
+      
+     .rightpage{
+      padding-left: 5%;
+
+      .snsimg{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .content{
+          padding-top: 5%;
+        }
+      }
+      }
+     }
+    }
+  }
+}

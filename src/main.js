@@ -154,7 +154,7 @@ ScrollTrigger.create({
   trigger: '.section03',
   start: 'top top',
   end: 'bottom bottom',
-  animation: gsap.from('.section03 .title',{y:30,opacity:0}),
+  animation: gsap.from('.section03 .title',{y:20,opacity:0}),
   // pin: false,
   // pinSpacing: false,
   // markers: true,
@@ -169,12 +169,25 @@ ScrollTrigger.create({
   trigger: '.section04',
   start: 'top top',
   end: 'bottom bottom',
-  animation: gsap.from('.section04 .title',{y:30,opacity:0}),
+  animation: gsap.from('.section04 .title',{y:20,opacity:0}),
   // pin: false,
   // pinSpacing: false,
   // markers: true,
   // scrub: true,
 })
+
+ScrollTrigger.create({
+  trigger: '.section04',
+  start: 'top top',
+  end: 'bottom bottom',
+  animation: gsap.from('.section04 .subtitle',{y:30,opacity:0}),
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  // scrub: true,
+})
+
+
 
 ScrollTrigger.create({
   trigger: '.section04',
@@ -193,7 +206,7 @@ ScrollTrigger.create({
   trigger: '.section05',
   start: 'top top',
   end: 'bottom bottom',
-  animation: gsap.from('.title',{y:30,opacity:0}),
+  animation: gsap.from('.title',{y:20,opacity:0}),
   // pin: false,
   // pinSpacing: false,
   // markers: true,
