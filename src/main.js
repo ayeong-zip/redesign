@@ -33,14 +33,23 @@ ScrollTrigger.create({
   // scrub: true,
 });
 
+// Main(swiper page)
 const swiper = new Swiper(".section01 .bg-img", {
   loop: true,
   // If we need pagination
-  // pagination: {
-  // el: ".swiper-pagination",
-  // },
+  pagination: {
+  el: ".section01 .swiper-pagination",
+  bulletClass: "bullet",
+    bulletActiveClass: "active",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + "</span>";
+    },
+
+  },
 });
 
+// lifestyle (swiper page)
 const swiper3 = new Swiper(".section03 .bg-img", {
   loop: true,
   // If we need pagination
@@ -54,6 +63,22 @@ const swiper3 = new Swiper(".section03 .bg-img", {
     },
   },
 });
+
+// Sustainability (swiper page)
+const swiper5 = new Swiper(".section05 .flex-container .img-container .img .swiper-slide", {
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".section05 .swiper-pagination",
+    bulletClass: "bullet",
+    bulletActiveClass: "active",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + "</span>";
+    },
+  },
+});
+
 
 /* section02 */
 
