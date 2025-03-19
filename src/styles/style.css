@@ -55,9 +55,10 @@
 
       .about {
         display: none;
+
         .flex-container {
           display: flex;
-          padding-top: 5%;
+          padding-top: 4%;
           position: relative;
 
           .img-container {
@@ -79,63 +80,59 @@
           }
         }
       }
-      .productnew {
-        display: none;
+      
+      .product{
+        position: relative;
+         /* 공통 */
+         .subtitle {
+          position: absolute;
+          padding-top: 5%;
 
-        .flex-container {
-          display: flex;
-          position: relative;
-          padding-top: 30%;
-
-          .subtitle {
-            position: absolute;
-            left: 0;
-            top: 10%;
-            .contents {
-              padding-bottom: 20%;
-            }
-            .text {
-              padding-top: 10%;
-            }
-            .shopallproducts {
-              padding-top: 70%;
-            }
+          .contents {
+            padding-bottom: 11%;
           }
-          .img-container {
-            display: flex;
-            position: absolute;
-            right: 40px;
-            top: 10%;
-            gap: 2%;
-            .text {
-              padding-top: 2%;
-            }
+          .text {
+            padding-top: 10%;
+          }
+          .shopallproducts {
+            padding-top: 50%;
           }
         }
+
+        .productnew d-1 d-2 .flex-container{
+          position: absolute;
+          top: 50%;
+          display: flex;
+          
+            /* position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 30%;
+             */
+            
+            /* img-container {
+              display: flex;
+              gap: 2%;
+              .text {
+                padding-top: 2%;
+              }
+            } */
+  
+        }
+        
       }
-      /* lnb best */
-      .productbest {
+
+      /* best */
+      .productbest d-2 {
         display: none;
+        position: relative;
 
         .flex-container {
+          position: absolute;
           display: flex;
           justify-content: space-between;
           padding-left: 6%;
           padding-right: 0;
-
-          .subtitle {
-            padding-top: 5%;
-
-            .contents {
-              padding-bottom: 20%;
-            }
-            .text {
-              padding-top: 10%;
-            }
-            .shopallproducts {
-              padding-top: 60%;
-            }
-          }
 
           .img-container {
             padding-bottom: 1%;
@@ -180,45 +177,39 @@
           }
         }
       }
-      /* lnb all */
-      .productall {
-        .flex-container {
-          display: none;
+      /* all */
+      .productall d-2 {
 
-          .subtitle {
-            padding-top: 5%;
+       .flex-container {
+         /* display: none; */
 
-            .contents {
-              padding-bottom: 20%;
-            }
-            .text {
-              padding-top: 10%;
-            }
-            .shopallproducts {
-              padding-top: 88%;
-            }
-          }
-          .category-container {
-            padding-left: 1%;
-            padding-top: 5%;
-
-            .category {
-              padding-bottom: 3%;
-            }
-          }
           .img-container {
-            display: flex;
+           display: flex;
+           justify-content: center;
+           padding-top: 3%;
+           padding-left: 15%;
+
+           .category-container{
+            padding-left: 10%;
             padding-top: 5%;
-            padding-left: 8%;
-            .all {
-              padding-left: 2%;
+ 
+            .category {
+             padding-bottom: 3%;
+             }
+           }
+
+           .all {
+            padding-left: 2%;
             }
-            .text {
-              padding-top: 3%;
+           .text {
+            padding-top: 3%;
             }
           }
         }
       }
+     
+      
+      
     }
   }
 
@@ -457,58 +448,105 @@
     padding-bottom: 2%;
   }
 
+  .swiper-slide {
+    position: relative;
+  }
+
   .flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 
-    .flex-img {
+    .flex-img1 {
       display: flex;
+      justify-content: center;
       position: relative;
       padding-top: 15px;
       padding-left: 3%;
 
       .img {
+        position: relative;
         padding-left: 3%;
       }
       .img-tag {
         position: absolute;
-        left: 18%;
+        left: 24%;
         top: 40%;
+      }
+
+      .body {
+        padding-top: 3%;
+        padding-left: 3%;
+        position: relative;
+        padding-right: 3%;
+  
+        .drawers {
+          display: flex;
+          padding-top: 10%;
+          padding-bottom: 20%;
+          .drawer1 {
+            padding-right: 3%;
+          }
+        }
+        
       }
     }
 
-    .body {
-      padding-left: 3%;
+    .flex-img2 {
+      display: flex;
+      justify-content: center;
       position: relative;
-      padding-right: 3%;
+      padding-top: 15px;
+      padding-left: 3%;
 
-      .drawers {
-        display: flex;
-        padding-top: 10%;
-        padding-bottom: 20%;
-        .drawer1 {
-          padding-right: 3%;
-        }
+      .img {
+        position: relative;
+        padding-left: 3%;
       }
-      .custom-btn {
-        border: none;
-        width: 405px;
-        height: 50px;
+      .img-tag {
         position: absolute;
-        margin: 0 auto;
-        left: 0;
-        bottom: 0;
-        transform: translate(12%, -40%);
-        background: white url("/section03/button.jpg") no-repeat center;
-        padding: 0;
+        left: 15%;
+        bottom: 30%;
+      }
 
-        &:hover {
-          background: white url("/section03/button-hover.jpg") no-repeat center;
+      .body {
+        padding-top: 3%;
+        padding-left: 3%;
+        position: relative;
+        padding-right: 3%;
+  
+        .drawers {
+          display: flex;
+          padding-top: 10%;
+          padding-bottom: 20%;
+          .drawer1 {
+            padding-right: 3%;
+          }
         }
+        
+      }
+    }
+
+    .custom-btn {
+      border: none;
+      width: 405px;
+      height: 50px;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      bottom: 0;
+      transform: translate(10%, -200%);
+      background: white url("/section03/button.jpg") no-repeat center;
+      padding: 0;
+
+      &:hover {
+        background: white url("/section03/button-hover.jpg") no-repeat center;
       }
     }
   }
+
   .pagination {
     display: flex;
     justify-content: center;
