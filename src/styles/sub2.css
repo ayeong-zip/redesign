@@ -1,129 +1,122 @@
+.text-effect {
+  opacity: 0.3; /*  0 ~ 1 : 100% */
+  transition: all 0.5s;
 
+  &:hover {
+    opacity: 1;
+  }
+}
+.hover_effect {
+  overflow: hidden;
+}
 
-.text-effect{
-    opacity: 0.3; /*  0 ~ 1 : 100% */
-    transition:all .5s;
-  
-    &:hover{
-      opacity: 1;
-    }
-  }
-  .hover_effect{
-    overflow: hidden;
-    
-  }
-  
-  
-  .hover_effect img{
-    transition: all 1s;
-  }
-  
-  .hover_effect:hover img{
-    transform: scale(1.3);
-  }
+.hover_effect img {
+  transition: all 1s;
+}
 
+.hover_effect:hover img {
+  transform: scale(1.3);
+}
 
 /* inspration */
-.section01{
-    background-color: #fff;
-    height: inherit;
-
-    .main-container{
-        .img-container{
-            position: relative;
-            display: flex;
-            .content{
-                display: flex;
-                position: absolute;
-                left: 5%;
-                top: 10%;
-            }
-            .title{
-                position: absolute;
-                left: 8%;
-                top: 40%;
-            }
-        }
-    }
-    .animationpage{
-      display: flex;
-      padding-top: 5%;
-      position: relative;
-
-      .left{
-        display: flex;
-        
-        .front{
-          position: absolute;
-          padding-top: 18%;
-          padding-left: 23%;
-        }
-      }
-      .center{
-        padding-top: 2%;
-        padding-left: 15%;
-        justify-content: center;
-        align-items: center;
-
-        .topimg{
-          padding-left: 60%;
-        }
-        .title{
-          padding-top: 20%;
-          .text{
-            padding-top: 5%;
-          }
-        }
-        .bottomimg{
-          display: flex;
-          padding-top: 20%;
-          padding-left: 40%;
-          position: relative;
-
-          .frontimg{
-            position: absolute;
-            bottom: 37%;
-            left: 20%;
-          }
-        }
-      }
-      
-      .right{
-        position: absolute;
-        top: 17%;
-        padding-left: 90%;
-      }
-    }
-  }
-
-.section02{
+.section01 {
   background-color: #fff;
   height: inherit;
 
-  .youtube{
+  .main-container {
+    .img-container {
+      position: relative;
+      display: flex;
+      .content {
+        display: flex;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+      }
+      .title {
+        position: absolute;
+        left: 8%;
+        top: 40%;
+      }
+    }
+  }
+
+  .animationpage {
+    display: flex;
+    padding-top: 5%;
+    position: relative;
+
+    .left {
+      display: flex;
+
+      .front {
+        position: absolute;
+        padding-top: 18%;
+        padding-left: 23%;
+      }
+    }
+    .center {
+      padding-top: 2%;
+      padding-left: 15%;
+      justify-content: center;
+      align-items: center;
+
+      .topimg {
+        padding-left: 60%;
+      }
+      .title {
+        padding-top: 20%;
+        .text {
+          padding-top: 5%;
+        }
+      }
+      .bottomimg {
+        display: flex;
+        padding-top: 20%;
+        padding-left: 40%;
+        position: relative;
+
+        .frontimg {
+          position: absolute;
+          bottom: 37%;
+          left: 20%;
+        }
+      }
+    }
+
+    .right {
+      position: absolute;
+      top: 17%;
+      padding-left: 90%;
+    }
+  }
+}
+
+.section02 {
+  background-color: #fff;
+  height: inherit;
+
+  .youtube {
     padding-top: 5%;
 
-    .titleimg{
+    .titleimg {
       display: flex;
       justify-content: center;
       padding-bottom: 2%;
     }
-    .textimg{
+    .textimg {
       padding-top: 3%;
       display: flex;
       justify-content: center;
       padding-bottom: 3%;
     }
-    .explore-btn{
+    .explore-btn {
       display: flex;
       justify-content: center;
     }
-    
-    
   }
 
-
-  .btn{
+  .btn {
     display: flex;
     justify-content: center;
     border: none;
@@ -131,144 +124,141 @@
     height: 50px;
     background: url("/inspiration/explorebutton.png") no-repeat center;
     cursor: pointer;
-  
+
     &:hover {
       border: 1px solid black;
       background: black url("/inspiration/explorebutton.jpg") no-repeat center;
     }
   }
-
 }
 
-.section03{
+.section03 {
   background-color: #fff;
   height: inherit;
 
-  .leftpage{
+  .leftpage {
     display: flex;
     justify-content: center;
     padding-top: 5%;
 
-    .img-container{
+    .img-container {
       position: relative;
 
-      .read-btn{
+      .read-btn {
         position: absolute;
         left: 35%;
         bottom: 5%;
-        width: 222px; 
+        width: 222px;
         height: 50px;
         background: url("/inspiration/readbutton.png") no-repeat center;
         cursor: pointer;
-  
+
         &:hover {
-        border: 1px solid black;
-        background: black url("/inspiration/readbutton.jpg") no-repeat center;
+          border: 1px solid black;
+          background: black url("/inspiration/readbutton.jpg") no-repeat center;
         }
       }
     }
-   .rightpage{
-    padding-left: 5%;
+    .rightpage {
+      padding-left: 5%;
 
-    .text-container{
-      .title{
+      .text-container {
+        .title {
+          padding-top: 5%;
+        }
+        .text {
+          padding-top: 10%;
+        }
+      }
+      .creativeimg {
         padding-top: 5%;
-      }
-      .text{
-        padding-top: 10%;
-      }
-    }
-    .creativeimg{
-      padding-top: 5%;
-      .text{
-        padding-top: 10%;
+        .text {
+          padding-top: 10%;
+        }
       }
     }
-   }
   }
 }
 
 /* snspage */
-.section04{
+.section04 {
   background-color: #fff;
   height: inherit;
 
-  .snspage{
+  .snspage {
     padding-top: 5%;
     padding-right: 10%;
-    
-    .title{
+
+    .title {
       display: flex;
       justify-content: center;
       padding-bottom: 2%;
     }
-    .flex-container{
+    .flex-container {
       display: flex;
       justify-content: center;
 
-     .leftpage{
-      padding-right: 10%;
+      .leftpage {
+        padding-right: 10%;
 
-      .product{
-        display: flex;
-        padding-top: 35%;
+        .product {
+          display: flex;
+          padding-top: 35%;
 
-        .panton{
-          padding-right: 4%;
-          position: relative;
+          .panton {
+            padding-right: 4%;
+            position: relative;
 
-          .img{
-            position: absolute;
-            left: 22%;
-            top: 22%;
+            .img {
+              position: absolute;
+              left: 22%;
+              top: 22%;
+            }
+            .name {
+              padding-top: 3%;
+            }
+            .info {
+              padding-top: 1%;
+            }
+            .price {
+              padding-top: 4%;
+            }
           }
-          .name{
-            padding-top: 3%;
-          }
-          .info{
-            padding-top: 1%;
-          }
-          .price{
-            padding-top: 4%;
+          .panel {
+            position: relative;
+
+            .img {
+              position: absolute;
+              left: 15%;
+              top: 35%;
+            }
+            .name {
+              padding-top: 3%;
+            }
+            .info {
+              padding-top: 1%;
+            }
+            .price {
+              padding-top: 4%;
+            }
           }
         }
-        .panel{
-          position: relative;
 
-          .img{
-            position: absolute;
-            left: 15%;
-            top: 35%;
-          }
-          .name{
-            padding-top: 3%;
-          }
-          .info{
-            padding-top: 1%;
-          }
-          .price{
-            padding-top: 4%;
+        .rightpage {
+          padding-left: 5%;
+
+          .img-container {
+            .img {
+              padding-top: 5%;
+              padding-bottom: 5%;
+            }
+            .text {
+              padding-top: 5%;
+              padding-bottom: 5%;
+            }
           }
         }
-      
       }
-      
-     .rightpage{
-      padding-left: 5%;
-
-      .img-container{
-        .img{
-          padding-top: 5%;
-          padding-bottom: 5%;
-        }
-        .text{
-          padding-top: 5%;
-          padding-bottom: 5%;
-        }
-      }
-      }
-     }
     }
   }
-
 }

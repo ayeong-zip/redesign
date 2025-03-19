@@ -22,245 +22,6 @@
   transform: scale(1.3);
 }
 
-.section01 {
-  background-color: #fff;
-
-  header {
-    list-style: none;
-    z-index: 10;
-    position: relative;
-    /* height: 50px; */
-    /* padding: 50px; */
-
-    .inner {
-      width: 1280px;
-      margin: 0 auto;
-      /* background: red; */
-      display: flex;
-      position: relative;
-      align-items: center;
-      border-bottom: 1px solid black;
-      justify-content: space-between; /* gnb 3등분 영역 지정해주기 */
-      padding-top: 1%;
-      padding-bottom: 1%;
-    }
-
-    .bottom {
-      /* display: none; */
-      width: 100vw;
-      height: 448px;
-      background-color: rgb(255, 255, 255);
-      position: absolute;
-      left: 0;
-
-      .about {
-        display: none;
-
-        .flex-container {
-          display: flex;
-          padding-top: 4%;
-          position: relative;
-
-          .img-container {
-            display: flex;
-            padding-left: 3%;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-          }
-          .content {
-            position: relative;
-            padding-left: 3%;
-
-            .shopallproducts {
-              position: absolute;
-              left: 20%;
-              bottom: 0;
-            }
-          }
-        }
-      }
-      
-      .product{
-        position: relative;
-         /* 공통 */
-         .subtitle {
-          position: absolute;
-          padding-top: 5%;
-
-          .contents {
-            padding-bottom: 11%;
-          }
-          .text {
-            padding-top: 10%;
-          }
-          .shopallproducts {
-            padding-top: 50%;
-          }
-        }
-
-        .productnew d-1 d-2 .flex-container{
-          position: absolute;
-          top: 50%;
-          display: flex;
-          
-            /* position: absolute;
-            top: 0;
-            right: 0;
-            padding-top: 30%;
-             */
-            
-            /* img-container {
-              display: flex;
-              gap: 2%;
-              .text {
-                padding-top: 2%;
-              }
-            } */
-  
-        }
-        
-      }
-
-      /* best */
-      .productbest d-2 {
-        display: none;
-        position: relative;
-
-        .flex-container {
-          position: absolute;
-          display: flex;
-          justify-content: space-between;
-          padding-left: 6%;
-          padding-right: 0;
-
-          .img-container {
-            padding-bottom: 1%;
-
-            .panton {
-              padding-top: 4%;
-              display: flex;
-              align-items: center;
-              border-bottom: 1px solid rgb(217, 217, 217);
-              justify-content: space-between;
-
-              .img {
-                display: flex;
-                gap: 3rem;
-              }
-            }
-            .kevi {
-              padding-top: 3%;
-              display: flex;
-              align-items: center;
-              border-bottom: 1px solid rgb(217, 217, 217);
-              justify-content: space-between;
-
-              .img {
-                display: flex;
-                gap: 3rem;
-              }
-            }
-            .storage {
-              padding-top: 3%;
-              display: flex;
-              align-items: center;
-              border-bottom: 1px solid rgb(217, 217, 217);
-              justify-content: space-between;
-
-              .img {
-                margin-left: 100px;
-                display: flex;
-                gap: 3rem;
-              }
-            }
-          }
-        }
-      }
-      /* all */
-      .productall d-2 {
-
-       .flex-container {
-         /* display: none; */
-
-          .img-container {
-           display: flex;
-           justify-content: center;
-           padding-top: 3%;
-           padding-left: 15%;
-
-           .category-container{
-            padding-left: 10%;
-            padding-top: 5%;
- 
-            .category {
-             padding-bottom: 3%;
-             }
-           }
-
-           .all {
-            padding-left: 2%;
-            }
-           .text {
-            padding-top: 3%;
-            }
-          }
-        }
-      }
-     
-      
-      
-    }
-  }
-
-  .bottom_inner {
-    width: 1280px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    height: 300px;
-  }
-
-  .logo {
-    padding-left: 6%;
-  }
-
-  .group {
-    display: flex;
-    gap: 10em;
-    padding-right: 4%;
-
-    .gnb {
-      border-left: 1px solid black;
-      padding: 0;
-      height: 100%;
-
-      .gnb-img {
-        display: flex;
-        padding: 3%;
-        padding-left: 10px;
-      }
-    }
-    .gnb-home {
-      border-left: 1px solid black;
-      padding-left: 10px;
-
-      .gnb-home-img {
-        display: flex;
-        padding: 3%;
-      }
-    }
-    .icons {
-      padding-left: 10px;
-      padding-right: 5px;
-
-      .icon-img {
-        display: flex;
-        padding: 18%;
-      }
-    }
-  }
-}
-
 /* Main page */
 .main-container {
   position: relative;
@@ -481,7 +242,7 @@
         padding-left: 3%;
         position: relative;
         padding-right: 3%;
-  
+
         .drawers {
           display: flex;
           padding-top: 10%;
@@ -490,7 +251,6 @@
             padding-right: 3%;
           }
         }
-        
       }
     }
 
@@ -516,7 +276,7 @@
         padding-left: 3%;
         position: relative;
         padding-right: 3%;
-  
+
         .drawers {
           display: flex;
           padding-top: 10%;
@@ -525,7 +285,6 @@
             padding-right: 3%;
           }
         }
-        
       }
     }
 
@@ -553,6 +312,19 @@
     align-items: center;
     padding-top: 3%;
     gap: 1rem;
+
+    .bullet {
+      width: 80px;
+      height: 10px;
+      background-color: black;
+      opacity: 0.2;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &.active {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -655,7 +427,7 @@
       }
     }
   }
-  
+
   .pagination {
     display: flex;
     justify-content: center;
@@ -665,12 +437,10 @@
   }
 }
 
-
-.section05 .swiper{
-
+.section05 .swiper {
   width: 923px;
   height: 467px;
-  video{
+  video {
     width: 100%;
   }
 }
@@ -724,7 +494,7 @@
 }
 
 /* footer */
-.section07 {
+.footer {
   /* width: 1920px; */
   height: inherit;
 }

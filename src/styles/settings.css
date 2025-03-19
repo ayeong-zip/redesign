@@ -202,3 +202,147 @@ section {
 
   /* border: 1px solid white; */
 }
+
+.section01 {
+  background-color: #fff;
+
+  header {
+    list-style: none;
+    z-index: 10;
+    position: relative;
+    /* height: 50px; */
+    /* padding: 50px; */
+
+    .inner {
+      width: 1280px;
+      margin: 0 auto;
+      /* background: red; */
+      display: flex;
+      position: relative;
+      align-items: center;
+      border-bottom: 1px solid black;
+      justify-content: space-between; /* gnb 3등분 영역 지정해주기 */
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+
+    .bottom {
+      /* display: none; */
+      width: 100vw;
+      height: 0;
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      left: 0;
+
+      .about {
+        display: none;
+
+        .flex-container {
+          display: flex;
+          padding-top: 4%;
+          position: relative;
+
+          .img-container {
+            display: flex;
+            padding-left: 3%;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+          }
+          .content {
+            position: relative;
+            padding-left: 3%;
+
+            .shopallproducts {
+              position: absolute;
+              left: 20%;
+              bottom: 0;
+            }
+          }
+        }
+      }
+
+      .product {
+        position: relative;
+        z-index: 100;
+        /* 공통 */
+        .subtitle {
+          position: absolute;
+          z-index: 100;
+          display: none;
+          padding-top: 5%;
+
+          .contents {
+            padding-bottom: 11%;
+          }
+          .text {
+            padding-top: 10%;
+          }
+          .shopallproducts {
+            padding-top: 50%;
+          }
+        }
+
+        .productnew {
+        }
+      }
+
+      /* best */
+      .productbest {
+        display: none;
+      }
+      /* all */
+      .productall {
+        display: none;
+      }
+    }
+  }
+
+  .bottom_inner {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+  }
+
+  .logo {
+    padding-left: 6%;
+  }
+
+  .group {
+    display: flex;
+    gap: 10em;
+    padding-right: 4%;
+
+    .gnb {
+      border-left: 1px solid black;
+      padding: 0;
+      height: 100%;
+
+      .gnb-img {
+        display: flex;
+        padding: 3%;
+        padding-left: 10px;
+      }
+    }
+    .gnb-home {
+      border-left: 1px solid black;
+      padding-left: 10px;
+
+      .gnb-home-img {
+        display: flex;
+        padding: 3%;
+      }
+    }
+    .icons {
+      padding-left: 10px;
+      padding-right: 5px;
+
+      .icon-img {
+        display: flex;
+        padding: 18%;
+      }
+    }
+  }
+}

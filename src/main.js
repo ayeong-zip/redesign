@@ -33,12 +33,26 @@ ScrollTrigger.create({
   // scrub: true,
 });
 
-const swiper = new Swiper(".bg-img", {
+const swiper = new Swiper(".section01 .bg-img", {
   loop: true,
   // If we need pagination
   // pagination: {
-  //   el: ".swiper-pagination",
+  // el: ".swiper-pagination",
   // },
+});
+
+const swiper3 = new Swiper(".section03 .bg-img", {
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".section03 .pagination",
+    bulletClass: "bullet",
+    bulletActiveClass: "active",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + "</span>";
+    },
+  },
 });
 
 /* section02 */
@@ -195,24 +209,20 @@ ScrollTrigger.create({
   // scrub: true,
 });
 
-
 const swiper2 = new Swiper(".video-swiper", {
   loop: true,
   // If we need pagination
-  type:'fraction',
-  
+  type: "fraction",
+
   pagination: {
     el: ".pp",
+    // bulletClass: "bullet",
+    // bulletActiveClass: "active",
+    // clickable: true,
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '">' + (index + 1) + "</span>";
+    // },
   },
-  
-  bulletClass:'bullet',
-  bulletActiveClass:'active',
-  clickable:true,
-  renderBullet: function (index, className) {
-    
-    return '<span class="' + className + '">' + (index + 1) + '</span>';
-  }
-
 });
 
 markers();
